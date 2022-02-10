@@ -8,9 +8,47 @@ License URI: http://www.themevault.net/license/-->
 <html lang="en">
     <head>
         <style> 
-                 video {
-                 height: auto; 
-                 }
+                 
+
+  .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 4px;
+}
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding:4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px)
+ {
+  .column 
+{
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
         </style>
 
         <meta charset="utf-8">
@@ -72,80 +110,81 @@ License URI: http://www.themevault.net/license/-->
 
             <!------------Video--------------------->
              <center>
-            <section id="gallery-block" class="section-padding">
+            <section>
                 <div class="container">
 
                     <div class="text-head">
                         <h2 style="font-family:Times New Roman,Times,serif; font-size: 40px; color:Maroon">Video Gallery</h2>
                     </div>
-                      
-                    <div>
-                    <video width="400" muted controls>
-                    <source src="images/v3.mp4" type="video/mp4">
-                   </video> 
-                   
-                    <video width="400" muted controls>
-                    <source src="images/v13.mp4" type="video/mp4">
-                   </video>
-                  </div>
 
-                    <div>
-                    <video width="400" muted controls>
+                 <center>
+                 <div class="row"> 
+
+                  <div class="column">
+                      <video style="width:100%" muted controls>
+                      <source src="images/v3.mp4" type="video/mp4">
+                   </video> 
+
+                   <video style="width:100%" muted controls>
                     <source src="images/v6.mp4" type="video/mp4">
                    </video> 
-
-                  <video width="400" muted controls>
-                    <source src="images/v4.mp4" type="video/mp4">
-                   </video> 
-                     </div>
-             
-                   <div>
-                    <video width="400" muted controls>
+       
+                 <video style="width:100%" muted controls>
                     <source src="images/v7.mp4" type="video/mp4">
                    </video> 
-                 
-                   <video width="400" muted controls>
-                    <source src="images/v10.mp4" type="video/mp4">
-                   </video> 
-                    </div>
 
-                      <div>
-                    <video width="400" muted controls>
+                 <video style="width:100%" muted controls>
                     <source src="images/v1.mp4" type="video/mp4">
                    </video> 
-                        
-                  <video width="400" muted controls>
-                    <source src="images/v5.mp4" type="video/mp4">
-                   </video> 
-                 </div>
- 
-                 <div>
-                  <video width="400" muted controls>
-                    <source src="images/v8.mp4" type="video/mp4">
-                   </video>
-                 
-                     <video width="400" muted controls>
-                    <source src="images/v14.mp4" type="video/mp4">
-                   </video> 
-                   </div>
 
-                   <div>
-                    <video width="400" muted controls>
+                   <video style="width:100%" muted controls>
+                    <source src="images/v8.mp4" type="video/mp4">
+                   </video> 
+
+                <video style="width:100%" muted controls>
                     <source src="images/v2.mp4" type="video/mp4">
                    </video> 
 
-                   <video width="400" muted controls>
-                    <source src="images/v9.mp4" type="video/mp4">
-                   </video> 
-                   
-                     </div>
-
-                   <div>
-                    <video width="400" muted controls>
+                    <video width="100%" muted controls>
                     <source src="images/v11.mp4" type="video/mp4">
                    </video>
 
-                   </div>
+                 </div>
+
+                     <div class="column">
+
+                      <video style="width:100%" muted controls>
+                      <source src="images/v13.mp4" type="video/mp4">
+                   </video> 
+
+                   <video style="width:100%" muted controls>
+                    <source src="images/v4.mp4" type="video/mp4">
+                   </video> 
+       
+                 <video style="width:100%" muted controls>
+                    <source src="images/v10.mp4" type="video/mp4">
+                   </video> 
+
+                 <video style="width:100%" muted controls>
+                    <source src="images/v5.mp4" type="video/mp4">
+                   </video> 
+
+                   <video style="width:100%" muted controls>
+                    <source src="images/v14.mp4" type="video/mp4">
+                   </video> 
+
+                <video style="width:100%" muted controls>
+                    <source src="images/v9.mp4" type="video/mp4">
+                   </video> 
+
+               <video style="width:100%" muted controls>
+                    <source src="images/v15.mp4" type="video/mp4">
+                   </video> 
+
+                 </div>
+
+                </div>
+                </center>
 
               </div>
                  
