@@ -222,3 +222,72 @@
     height: 400px;
   }
 }
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+    /* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px)
+ {
+  .column 
+{
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+div#h1 {
+  margin: 50px 150px 50px 150px;
+  padding: 80px 80px 80px 80px;
+  background-color: rgb(6, 8, 8);
+  color: rgb(255, 255, 255);
+  border-style: double;
+  border-width: 10px;
+  border-color:  rgb(6, 255, 243);
+
+  
+  background-color: rgb(6, 8, 8);
+  animation-name: example;
+  animation-duration: 25s;
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  15%  {background-color: yellow;}
+  30%  {background-color: rgb(72, 255, 0);}
+  45%  {background-color: rgb(0, 255, 213);}
+  60%  {background-color: rgb(0, 17, 255);}
+  75%  {background-color: rgb(119, 0, 255);}
+  90%  {background-color: rgb(255, 0, 106);}
+  100% {background-color: green;}
+}
+.transform_animation:hover {
+    transform: scale(2,2);   
+}
